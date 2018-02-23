@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour
 {
-	
+	public float timeTillNextLevel = 5.0f;
 	// Use this for initialization
 	void Start ()
 	{
@@ -17,17 +17,24 @@ public class LevelManager : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
-		if (Input.GetKeyDown ("space"))
+		timeTillNextLevel -= Time.deltaTime;
+		if (Input.GetKeyDown ("space")) {
 			LoadNextScene ();
+		}
 
+		if (timeTillNextLevel <= 0) {
+			LoadNextScene ();
+		}
 	}
 
-	public void LoadNextScene () {
+	public void LoadNextScene ()
+	{
 		int currentIndex =	SceneManager.GetActiveScene ().buildIndex;
 		SceneManager.LoadScene (currentIndex + 1);
 	}
 
-	public void PreviousScene () {
+	public void PreviousScene ()
+	{
 		int currentIndex =	SceneManager.GetActiveScene ().buildIndex;
 		SceneManager.LoadScene (currentIndex - 1);
 	}
