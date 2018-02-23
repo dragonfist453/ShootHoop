@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class ScoreKeeper : MonoBehaviour {
-	int score = 0;
+	public int score = 0;
 	// Use this for initialization
 	void Start () {
 
