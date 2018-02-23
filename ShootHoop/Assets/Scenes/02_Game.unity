@@ -163,6 +163,48 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ballPrefab: {fileID: 1461018632757302, guid: 6b54cd821c06ef547b6666ce8a753c20, type: 2}
   speed: 20
+--- !u!1001 &307325166
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4468622468656466, guid: eeb3f73643e396a4e9d586bde5a2d99f, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4468622468656466, guid: eeb3f73643e396a4e9d586bde5a2d99f, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4468622468656466, guid: eeb3f73643e396a4e9d586bde5a2d99f, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4468622468656466, guid: eeb3f73643e396a4e9d586bde5a2d99f, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4468622468656466, guid: eeb3f73643e396a4e9d586bde5a2d99f, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4468622468656466, guid: eeb3f73643e396a4e9d586bde5a2d99f, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4468622468656466, guid: eeb3f73643e396a4e9d586bde5a2d99f, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4468622468656466, guid: eeb3f73643e396a4e9d586bde5a2d99f, type: 2}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: eeb3f73643e396a4e9d586bde5a2d99f, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &310790572
 GameObject:
   m_ObjectHideFlags: 0

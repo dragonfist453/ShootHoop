@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour
 {
-	int currentIndex =	SceneManager.GetActiveScene ().buildIndex;
+	
 	// Use this for initialization
 	void Start ()
 	{
@@ -18,7 +18,13 @@ public class LevelManager : MonoBehaviour
 	void Update ()
 	{
 		if (Input.GetKeyDown ("space"))
-			SceneManager.LoadScene (currentIndex + 1);
+			LoadNextScene ();
+
+	}
+
+	void LoadNextScene () {
+		int currentIndex =	SceneManager.GetActiveScene ().buildIndex;
+		SceneManager.LoadScene (currentIndex + 1);
 	}
 		
 }
