@@ -14,8 +14,8 @@ public class ScoreKeeper : MonoBehaviour {
 		
 	}
 
-	void OnCollisionEnter(Collision collision) {
-		score++;
+	public void IncrementScore(int amount) {
+		score += amount;
 		print ("Score: "+ score);
 	}
 }
