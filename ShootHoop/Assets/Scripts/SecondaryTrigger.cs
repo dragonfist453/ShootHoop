@@ -14,6 +14,8 @@ public class SecondaryTrigger : MonoBehaviour {
 		if(otherCollider == expectedCollider) {
 			ScoreKeeper scoreKeeper = FindObjectOfType<ScoreKeeper>();
 			scoreKeeper.IncrementScore (1);
+			AudioSource source = GetComponent<AudioSource> ();
+			source.Play ();
 		}
 	}
 
