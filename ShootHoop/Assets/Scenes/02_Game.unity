@@ -205,7 +205,7 @@ Prefab:
     - target: {fileID: 114814635101579286, guid: eeb3f73643e396a4e9d586bde5a2d99f,
         type: 2}
       propertyPath: timeTillNextLevel
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: eeb3f73643e396a4e9d586bde5a2d99f, type: 2}
