@@ -3,21 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class DetectScoring : MonoBehaviour {
-
 	public int scorePerHit = 1;
-
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 
 	void OnCollisionEnter(Collision collision){
 		ScoreKeeper scoreKeep = FindObjectOfType<ScoreKeeper> ();
-		scoreKeep.IncrementScore (scorePerHit);
+		scoreKeep.IncrementScore(scorePerHit);
 	}
 }

@@ -4,15 +4,12 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class TimeDisplay : MonoBehaviour {
-
 	Text text;
 
-	// Use this for initialization
 	void Start () {
 		text = GetComponent<Text> ();
 	}
 	
-	// Update is called once per frame
 	void Update () {
 		float time = FindObjectOfType<LevelManager>().timeTillNextLevel;
 		text.text = "Remainig Time: " + time;
