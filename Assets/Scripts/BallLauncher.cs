@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BallLauncher : MonoBehaviour {
 	public GameObject ballPrefab;
-	public float speed = 5f;
+	public float speed = 10;
 
 	void Update()
 	{
